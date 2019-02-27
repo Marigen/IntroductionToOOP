@@ -1,44 +1,22 @@
 public class Animal {
 
-    public void run(int a){
+    /*Вариант для кормежки котов по одному*/
 
-        double b = (int) (Math.random() * 1000);
+    public void eat(int a){
 
-        if (a <= b){
-            System.out.println("Может пробежать " + a + " из " + b);
+        int foodVolume = (int) (Math.random() * 20); //Объем еды
+
+        System.out.println("Вы положили " + foodVolume + " гр. еды.");
+
+        if (a <= foodVolume){
+
+            System.out.println("Ура! Вы накормили кота.");
+
         } else {
-            System.out.println("Слишком далеко");
+
+            System.out.println("Маловато будет!");
+
         }
-
-        System.out.println();
-
-    }
-
-    public void swim(int a){
-
-        double b = (int) (Math.random() * 1000);
-
-        if (a <= b){
-            System.out.println("Может проплыть " + a + " из " + b);
-        } else {
-            System.out.println("Слишком далеко");
-        }
-
-        System.out.println();
-
-    }
-
-    public void jump(int a){
-
-        double b = (int) (Math.random() * 10);
-
-        if (a <= b){
-            System.out.println("Может подпрыгнуть на " + a + " из " + b);
-        } else {
-            System.out.println("Слишком высоко");
-        }
-
-        System.out.println();
 
     }
 

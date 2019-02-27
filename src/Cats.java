@@ -1,23 +1,24 @@
 public class Cats extends Animal {
 
-    public void swim(){
+    private String name;
+    private int emptyVolume;
 
-        System.out.println("Кошки не умеют плавать.");
+    public Cats(String name, int emptyVolume){
 
-        System.out.println();
+        this.name = name;
+        this.emptyVolume = emptyVolume;
 
     }
 
     public static void main(String[] args) {
 
-        Cats cat = new Cats();
-        cat.run(150);
-        cat.run(777);
+        Cats[] cat = new Cats[5];
 
-        cat.swim();
-
-        cat.jump(2);
-        cat.jump(5);
+        cat[0].eat(5); //= new Cats("Барсик", 5);
+        /*cat[1] = new Cats("Мурзик", 15);
+        cat[2] = new Cats("Мурка", 10);
+        cat[3] = new Cats("Черныш", 7);
+        cat[4] = new Cats("Дымка", 2);*/
 
     }
 
